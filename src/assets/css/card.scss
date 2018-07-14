@@ -1,0 +1,275 @@
+//卡权益模块共通样式表
+@import 'vars.scss';
+$card-rights-color: #DDB57A; //卡权益字体颜色
+$layout-border-color: #7C6837; //区域边框颜色
+.card-main{
+  .swiper-container{
+    background:url(../../assets/img/card/bg_02.jpg) no-repeat;
+    background-position:center top;
+    background-size: 100% auto;
+  }
+  .swiper-basic{
+    width: 100%;
+    display: flex;
+  }
+  .swiper-page-one{
+    width:100%;
+    display:flex;
+    background:url(../../assets/img/card/bg_01.jpg) no-repeat;
+    background-position:center center;
+    background-size: 100% auto;
+  }
+  .mask-layer{
+    width: 100%;
+    height:100%;
+    z-index:999;
+    opacity:1.0;
+  }
+  .title-img-container{
+    width:100%;
+    text-align:center;
+    padding-top: 20px;
+  }
+  .title-img-tqhl{
+    width:257px;
+    height:43px;
+  }
+  .tab-container{
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+  }
+  .table-privilege{
+    width: 92%;
+    margin: 0 4%;
+    text-align: left;
+    color: $card-rights-color;
+  }
+  .table-privilege .yOn{
+    width:16px;
+    height:16px;
+  }
+  .title-img-jkbz{
+    width:235px;
+    height:53px;
+  }
+  .portal-even{  
+    /* width: 295px; */
+    height: 90px;
+    border: 1px solid $layout-border-color;
+    margin: 30px 30px 0 50px;
+  }
+  .portal-odd{  
+    /* width: 295px; */
+    height: 90px;
+    border: 1px solid $layout-border-color;
+    margin: 30px 50px 0 30px;
+  }
+  .portal-even img{
+    width: 90px;
+    height: 90px;
+    margin-top: -10px;
+    margin-left: -20px;
+    float: left;
+    z-index:2;
+  }
+  .portal-even .bx-simple-desc, .portal-odd .bx-simple-desc{
+    color: $card-rights-color;
+    text-align: left;
+  }
+  .float-block-even{
+    height: 60px;margin-top: 15px;margin-left: 90px;
+  }
+  .desc-title{
+    font-size: 1.6rem;
+    line-height: 19px; 
+    font-weight: bold;
+    background:url(../../assets/img/card/icon_more.png)no-repeat;
+    background-size:16px;
+  }
+  .desc-content{
+    font-size: 1.2rem;line-height: 18px;
+  }
+  .portal-odd img{
+    width: 90px;
+    height: 90px;
+    margin-top: -10px;
+    margin-right: -20px;
+    float: right;
+    z-index:2;
+  }
+  .float-block-odd{
+    height: 60px;margin-top: 15px;margin-left: 20px;
+  }
+  /* 第五页 */
+  .title-img-jkfw{
+    width:235px;
+    height:54px;
+  }
+  .tab-container .jkfw-jyk{
+    margin: 0 20px;
+  }
+  .jyk-banner{width:100%;}
+
+  .jyk-banner{
+    .jyk-banner-img{
+    width:100%;
+    float:left;    
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    }
+    .jyk-logan{
+    height: 73px;
+    padding-top:3px;
+    padding-left: 16px;
+    border-left:1px solid #fff;
+    margin: 34px auto auto 16px;
+    color:#fff;
+    text-align:left;
+    position:absolute;
+    z-index:2;
+    }
+  }
+  .jyk-logan{
+    .logan-title{
+      line-height:23px;
+      margin-bottom:10px;
+      font-size:2.1rem;
+      display: flex;
+    }
+    .logan-desc{
+      line-height:18px;
+      font-size:1.2rem;
+      display: flex;
+    }
+  }
+  .jy-detail{
+    width:100%;
+    height:70px;
+    background:#fff;
+    float:left;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding-top:6px;
+    padding-left:16px;
+    color:#394043;
+    font-size:1.2rem;
+    line-height:14px;
+  }
+  .jy-detail{
+    .service-item{
+      width:48%;
+      margin-top:10px;
+      float:left;
+      display:flex;
+    }
+    img{
+      width: 12px;
+      height: 12px;
+      margin-right:4px;
+    }
+  }
+  .title-img-ykzs{
+    width:214px;
+    height:30px;
+  }
+  .card-model{
+    width:70%;
+    margin:0 auto;
+    display: flex;
+  }
+  .card-apply-btn{
+    width:75%;
+    height:48px;
+    background:url(../../assets/img/card/but.png) no-repeat;
+    background-size:100% auto;
+    margin: 24px auto;
+    line-height: 48px;
+    text-align:center;
+    font-size: 20px;
+    color: #fff;
+  }
+  .owned{
+    line-height:16px;
+    color:#D5A733;
+    margin:0 auto;
+    font-size:13px;
+    text-align:center;
+  }
+  .owned{
+    a{
+      font-size:1.3rem;
+      line-height:16px;
+      color:#D5A733;
+      text-decoration:underline;
+      display:inline-block;
+    }
+  }
+  .rules-title-con{
+    width:80%;
+    margin: 40px auto;
+  }
+  .rules-title-con{
+    .border-line{
+      width:30%;
+      height:3px;
+      margin-top:8px;
+      border-top:1px solid #7C6837;
+      border-bottom:1px solid #7C6837;
+      display:inline-block;
+      float:left;
+    }
+  }
+  .rules-title-act{
+      width:40%;
+      float:left;
+      color:#DDB57A;
+      font-size:2.0rem;
+      line-height:21px;
+      text-align:center;
+      display:inline-block;
+    }
+  .rules-des{
+    width:80%;
+    margin: 30px auto;
+    color:#DDB57A;
+    font-size:1.2rem;
+    line-height:24px;
+    padding-top:15px;
+    display:flex;
+  }
+  .read-more{
+    width:100px;
+    height:32px;
+    border: 1px solid #7C6837;
+    border-radius:2px;margin: 18px auto;
+    color:#D5A733;
+    text-align:center;
+    line-height:32px;
+    font-size:1.4rem;
+  }
+
+  
+
+
+  .apply-now{
+    width:40px;
+    height:103px;
+    position:fixed;
+    right:0;
+    bottom:20%;
+    background:url(../../assets/img/card/bg_apply.png);
+    background-size:100%;
+    text-align:center;
+    vertical-align:middle;
+  }
+  .apply-now{
+    span{
+      width:20px;
+      color:#fff;
+      margin-top: 8px;
+      font-size:1.4rem;
+      display:inline-block;
+    }
+  }
+}

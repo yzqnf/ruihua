@@ -1,0 +1,292 @@
+@import 'vars.scss';
+
+.main_vue .page-privilege {
+  img {
+    display:block;
+  }
+  #LogoFooter img {
+    display:inline;
+  }
+  .black-header {
+    height: 104px;
+    background: linear-gradient(105deg, #575757 0%, #040404 100%);
+  }
+  .black-header>img {
+    height:60px;
+    max-width:100%;
+    margin:0 auto 0 auto;
+  }
+  .title {
+    color:$normal-color;
+    font-size:1.3rem;
+    font-weight: bold;
+    line-height: 18px;
+  }
+  .description{
+    color:$normal-color-light;
+    font-size:1.2rem;
+    line-height: 17px;
+    margin-top:3px;
+  }
+  .golden-container {
+    position: relative;
+    border: 1px solid #EFE3D1;
+  }
+  .golden-container .container-label{
+    position: absolute;
+    z-index:1;
+    top:-5px;
+    width:100%;
+    display: flex;
+    justify-content: center;
+  }
+  .golden-container .container-label>div{
+    color: #D5A733;
+    background: white;
+    font-size:0.9rem;
+    line-height:10px;
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+  .golden-container .grey-row {
+    background: #F5F4F2;
+    font-size:1.3rem;
+    line-height: 33px;
+    color:#7C6837;
+    font-weight: bold;
+    text-align: center;
+  }
+  .button-privilege {
+    margin-top:14px;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 0px;
+    font-size: 2rem;
+    border: none;
+    color: white;
+    background-repeat:no-repeat; 
+    background-size:100% 100%;
+  }
+  .pack-service-content .golden-service-title {
+    text-align: center;
+    font-size:1.86rem;
+    display: flex;
+    justify-content: center;
+  }
+  .pack-service-content .golden-service-title:first-child{
+    padding-top:20px;
+  }
+  .pack-service-content .golden-service-title>div {
+    background-image: linear-gradient(-90deg, #D5A733 0%, #F0CE75 100%);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+  }
+  .pack-service-content .service-list {
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+  }
+  .pack-service-content .service-list .service-item {
+    width:48%;
+    max-width:145px;
+    font-size: 1.2rem;
+    line-height: 14px;
+    color:$normal-color;
+    padding-top:10px;
+    display:flex;
+  }
+  .pack-service-content .service-list .service-item:nth-child(2n){
+
+  }
+  .pack-service-content .service-list .service-item img {
+    width:12px;
+    height:12px;
+    margin-left:2px;
+    margin-right:4px;
+  }
+  .pack-service-content .content-row {
+    font-size:1.3rem;
+    line-height: 13px;
+    margin-top: 10px;
+    text-align:center;
+    color:$normal-color;
+  }
+  .pack-service-content .bottom-row {
+    background: #FAF7F2;
+    font-size:1.2rem;
+    line-height:16px;
+    text-align:center;
+    padding-top:12px;
+    padding-bottom: 11px;
+  }
+  .section-title-row {
+    margin:20px 16px 0 16px;
+    background: #FAF5EE;
+    height: 35px;
+    font-size:1.3rem;
+    line-height: 35px;
+    font-weight: bold;
+    color: #7C6837;
+    text-align: center;
+    letter-spacing:0.1em;
+  }
+  .use-flow-container, .attention-container {
+    margin: 15px 18px 10px 16px;
+  }
+  .use-flow-container .item, .attention-container .item {
+    position: relative;
+    display: flex;
+    margin-bottom: 10px;
+  }
+  .use-flow-container .item .item-number, .attention-container .item .item-number{
+    background: #DDB57A;
+    border-radius: 2px;
+    font-size: 1rem;
+    color: #FFFFFF;
+    width:15px;
+    height:15px;
+    line-height:16px;
+    text-align: center;
+    margin-top:4px;
+    margin-right:15px;
+    flex-shrink:0;
+    z-index: 1;
+  }
+  .use-flow-container .item .item-content, .attention-container .item .item-content {
+    font-size: 1.3rem;
+    color: #394043;
+    line-height: 24px;
+  }
+  .use-flow-left-border {
+    position: absolute;
+    border-left:1px dotted #D5A733;
+    height:110%;
+    top:10px;
+    left:7px;
+  }
+  .card {
+    width: 100%;
+    position: relative;
+  }
+  .card .background-image {
+    width:100%;
+  }
+  .card .text-container {
+    position: absolute;
+    top:0;
+    bottom:0;
+    left:20px;
+    z-index:1;
+    display:flex;
+    align-items: center;
+  }
+  .card .text {
+    font-size:1.2rem;
+    line-height: 21px;
+    color:white;
+  }
+  .card .text img{
+    height:26px;
+    margin-bottom: 10px;
+  }
+  .box-container {
+    margin-top:20px;
+  }
+  .box-container:last-child {
+    margin-bottom: 36px;
+  }
+  .box-container .group-title:before {
+    background-color: #D5A733;
+  }
+  .box-container .group-title>span {
+    font-size: 1rem;
+    font-weight: normal;
+    color: #394043;
+    margin-left:8px;
+  }
+  .box-container .record-content {
+    margin:5px 16px 6px 16px;
+  }
+  .box-container .record-content .row-border-bottom{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    color: #394043;
+    line-height:40px;
+    box-shadow: 0 1px 0 0 #EDECE9;
+  }
+  .mu-tabs {
+    border-radius: 2px 2px 0 0;
+    background-color: white;
+    box-shadow: 0 1px 0 0 #EDECE9;
+  }
+  .mu-tab-link .mu-tab-text {
+    color: #394043;
+  }
+  .mu-tab-link.mu-tab-active .mu-tab-text {
+    color: #D5A733;
+  }
+  .mu-tab-link-highlight {
+    background: linear-gradient(90deg, white 40%, #D5A733 40.1%, #D5A733 60%, white 60.1%);
+    color: #D5A733;
+  }
+  .card-shadow {
+    box-shadow: 0 0 15px rgba($color: #556074, $alpha: 0.2);
+    border-radius: 2px;
+  }
+  .avatar-shadow{
+    box-shadow: 0 3px 8px rgba($color: #FDD192, $alpha: 1.0);
+  }
+  .dialog-shadow {
+    box-shadow: 0 0 30px 0 rgba(110,88,32,0.51);
+  }
+  .radius-top-2 {
+    border-radius:2px 2px 0 0;
+  }
+  .group-title {
+    font-size: 1.5rem;
+    color: #D5A733;
+    font-weight: normal;
+  }
+}
+
+.mu-dialog.dialog.packs-to-take-dialog{
+  width:270px;
+  height:196px;
+  border-radius:6px;
+  .dialog-content{
+    height:144px;
+    border-bottom:1px solid #A5A197;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .dialog-content .packs-to-take-dialog-title{
+    font-size: 1.6rem;
+    color: #394043;
+    line-height: 25px;
+    padding-top: 35px;
+  }
+  .dialog-content .packs-to-take-dialog-description {
+    font-size: 1.4rem;
+    color: #394043;
+    line-height: 25px;
+    padding-top:10px;
+    width:222px;
+  }
+  .buttons {
+    height:52px;
+    display: flex;
+  }
+  .buttons .action-button {
+    width:50%;
+    height:100%;
+    font-size: 1.6rem;
+    color: #0076FF;
+  }
+  .buttons .action-button:nth-child(1) {
+    border-right:1px solid #A5A197;
+  }
+}

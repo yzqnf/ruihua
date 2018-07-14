@@ -1,0 +1,309 @@
+@charset "utf-8";
+
+@import "vars.scss";
+
+.pro-inner{
+	// font-family: "微软雅黑";
+}
+
+.pro-padding{
+	padding: 10px 16px;
+}
+.pro-list{
+  background: white;
+}
+
+//------------productDetail-----------------
+.pro-bar-img{
+  padding: 0px $content-gap;
+}
+.base-insured{
+	margin: 0px $content-gap;
+	border: 1px solid $input-border-color;
+	font-size: 13px;
+  color: $normal-color-light;
+}
+
+.insured-nav{
+	background: $bgcolor;
+	text-align: center;
+	display: flex;
+  position: relative;
+}
+.insured-bar{
+  height: 40px;
+  line-height: 40px;
+	flex: 1;
+	color: $normal-color;
+}
+.insured-bar-active{
+	color: $price-color;
+}
+
+//组合产品
+.base-insured-group{
+  border-style: none; 
+}
+.insured-content-group{
+  border: 1px solid $input-border-color;
+  border-top-style: none;
+}
+.insured-nav-group{
+  text-align: center;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: relative;
+  border-bottom: 1px solid $input-border-color;
+  min-height: 75px;
+}
+.insured-bar-group{
+  padding-top: 11px; 
+  height: 60px;
+  line-height: 19px;
+  flex: none;
+  width: 32%;
+  font-size: 15px;
+  color: $normal-color-light;
+  border-radius: 2px 2px 0 0;
+  border: 1px solid $input-border-color;
+  border-bottom-style: none;
+  transition: .1s all ease-out;
+}
+.insured-bar-ant-group{
+  font-size: 12px;
+}
+.insured-bar-active-group{
+  padding-top: 16px; 
+  flex: none;
+  height: 70px;
+  color: white;
+  border-radius: 2px 2px 0 0;
+  background-image: linear-gradient(0deg, #FFD127 0%, #FF8115 100%);
+}
+
+.insured-bar-premium{
+  text-align: center;
+  color: #AB611B;
+  background: #FFE9C5;
+  margin: 10px;
+  height: 44px;
+  line-height: 44px;
+  font-size: 15px;
+}
+
+.pro-bar{
+	margin: 12px 0px;
+	margin-top: 15px;
+	position: relative;
+}
+.pro-bar-param{
+	color: $normal-color;
+	padding-left: 15px;
+	font-size:15px;
+}
+.pro-bar-param::before{
+	content: "";
+	width: 6px;
+	height: 6px;
+	position: absolute;
+	top: 7px;
+	left: 0px;
+	background: $primary-color;
+}
+.pro-bar-detail{
+	color: $normal-color-light;
+	font-size: 12px;
+	position: absolute;
+	right: 5px;
+	top: 2px;
+}
+
+.insured-content{
+	width: 100%;
+	display: flex;
+	padding: 10px;
+	line-height: 25px;
+	color: $normal-color-light;
+}
+.insured-content img{
+	width: 14px;
+	height: 14px;
+	margin: 5px 0px 0px 10px; 
+}
+.insured-content-detail{
+	flex: 1;
+}
+.insured-content-money{
+	flex: none;
+	width: 65px;
+  text-align: right;
+}
+
+//条款
+.clause-row{
+	padding: 10px;
+	margin: 5px $content-gap;
+	border-bottom: 1px solid $input-border-color;
+	color: $normal-color-light;
+	position: relative;
+}
+.clause-row span{
+	font-size: 13px;
+	line-height: 20px;
+}
+.clause-row img{
+	position: absolute;
+  right: 10px;
+  top: 13px;
+  width: 14px;
+}
+
+//文字块
+.pro-textChunk{
+	background: $title-bgColor;
+	margin: 0px $content-gap;
+	padding: 15px 15px 15px 62px;
+	line-height: 25px;
+	letter-spacing: 0.1px;
+	color: $normal-color-light;
+}
+.pro-textChunk-title-base{
+  margin-top:20px;
+	margin-bottom: 5px !important;
+	color:$normal-color-light;
+  font-size:13px;
+  position: relative;
+}
+.pro-textChunk-title-base::before{
+  content: '';
+  position: absolute;
+  top: -3px;
+  left: -41px;
+  width: 30px;
+  height: 30px;
+}
+.pro-textChunk-title1::before{
+  background: url(../../assets/img/icon_count_1.png);
+  background-size: 100% 100%;
+}
+.pro-textChunk-title2::before{
+  background: url(../../assets/img/icon_count_2.png);
+  background-size: 100% 100%;
+}
+.pro-textChunk-title3::before{
+  background: url(../../assets/img/icon_count_3.png);
+  background-size: 100% 100%;
+}
+.pro-textChunk-title4::before{
+  background: url(../../assets/img/icon_count_4.png);
+  background-size: 100% 100%;
+}
+
+.pro-textChunk-detail{
+	margin: 0px !important;
+	font-size: 13px;
+}
+
+//常见问题
+.question-list{
+	padding:0px $content-gap 10px $content-gap;
+}
+.question-item{
+	position: relative;
+	margin-top: 10px;
+}
+.question-param{
+	padding: 10px 10px 10px 40px;
+	background: $title-bgColor;
+	font-size: 13px;
+	color:$normal-color-light;
+}
+.question-param::before{
+	content: '';
+	background: url(../../assets/img/icon_Q.png);
+	background-size: 100% 100%;
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	top: 8px;
+	left: 10px;
+}
+.question-value{
+	position: relative;
+	transition: .1s all ease-out;
+}
+.question-value-item{
+	padding: 10px 10px 10px 40px;
+	font-size: 13px;
+  color:$normal-color-light;
+  line-height: 24px;
+}
+.question-value-item::before{
+	content: '';
+	background: url(../../assets/img/icon_A.png);
+	background-size: 100% 100%;
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	top: 8px;
+	left: 10px;
+}
+
+//条款详情
+.clause-content-item:last-child{
+	border-style:none !important;
+} 
+.clause-content-item{
+	margin: 0px 15px;
+	padding: 15px 0px;
+	color: $normal-color-light;
+	letter-spacing: .2px;
+	line-height: 22px;
+	font-size: 13px;
+	border-bottom: 1px solid $input-border-color;
+}
+
+
+//--------------弹窗------------------
+.prod-pop{
+	background: rgba(57,64,67,0.70);
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+  height: 100%;
+  z-index: 100;
+  transition: .2s all ease-out;
+}
+.prod-pop-inner{
+	width: 100%;
+	height: 80%;
+	position: fixed;
+	left: 0px;
+	bottom: 0px;
+  background: white;
+  z-index: 101;
+  transition: .2s all ease-out;
+}
+.prod-pop-content{
+	height: 90%;
+  padding-bottom: 60px;
+}
+.prod-pop-title{
+	text-align: center;
+	color: $normal-color-light;
+	font-size:15px; 
+  line-height: 48px;
+  position: relative;
+  background: $window-title-color;
+}
+.prod-pop-title img{
+	position: absolute;
+	color: $close-color;
+	right: 24px;
+  top: 18px;
+  height: 12px;
+  width: 12px;
+}

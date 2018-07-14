@@ -1,0 +1,570 @@
+@import 'vars.scss';
+html {
+  color: $normal-color;
+  font-size: 10px;
+  background-color: $pageBgColor;
+}
+.money{
+  font-family:'Arial' !important;
+}
+.main_vue {
+  a {
+    color: $primary-color;
+    font-size: $font-lg;
+  }
+  .pd-hg {
+    padding: $pd-hg;
+  }
+  .pd-lg {
+    padding: $pd-lg;
+  }
+  .pd-md {
+    padding: $pd-md;
+  }
+  .pd-sm {
+    padding: $pd-sm;
+  }
+  .pd-tn {
+    padding: $pd-tn;
+  }
+  .mg-hg {
+    margin: $pd-hg;
+  }
+  .mg-lg {
+    margin: $pd-lg;
+  }
+  .mg-md {
+    margin: $pd-md;
+  }
+  .mg-sm {
+    margin: $pd-sm;
+  }
+  .mg-tn {
+    margin: $pd-tn;
+  }
+  .font-hg {
+    font-size: $font-hg;
+  }
+  .font-lg {
+    font-size: $font-lg;
+  }
+  .font-md {
+    font-size: $font-md;
+  }
+  .font-sm {
+    font-size: $font-sm;
+  }
+  .font-tn {
+    font-size: $font-tn;
+  }
+  .font-primary {
+    color: $primary-color;
+  }
+  .font-primary-light {
+    color: $primary-color-light;
+  }
+  .font-error {
+    color: $error-color;
+  }
+  .font-error-light {
+    color: $error-color-light;
+  }
+  .font-normal {
+    color: $normal-color;
+  }
+  .font-normal-light {
+    color: $normal-color-light;
+  }
+  .font-memo {
+    color: $memo-color;
+  }
+  .font-memo-light {
+    color: $memo-color-light;
+  }
+  .font-price {
+    color: $price-color;
+  }
+  .font-bold {
+    font-weight: bold;
+  }
+  .box-bg {
+    font-size: $font-tn;
+    color: $memo-color;
+    background-color: $bgcolor;
+    text-align: left;
+  }
+  .group-title {
+    font-size: $font-lg;
+    line-height: $font-lg;
+    font-weight: bold;
+    color: $normal-color;
+  }
+  .group-title:before {
+    display: inline-block;
+    position: relative;
+    top: 0.3rem;
+    width: 6px;
+    height: 6px;
+    background-color: $primary-color;
+    content: '　';
+    margin-right: 10px;
+  }
+  button {
+    outline-style: none;
+  }
+  .button-sm {
+    margin: 0 10px 10px 0;
+    padding: 0 10px;
+    min-width: 65px;
+    height: 30px;
+    line-height: 30px;
+    font-size: $font-sm;
+    border: 1px solid $input-border-color;
+    border-radius: 2px;
+    color: $normal-color-light;
+    background: none;
+    outline-style: none;
+  }
+  .button-sm-active {
+    border: 1px solid $primary-color;
+    color: $primary-color;
+  }
+  .button-sm-disabled {
+    color: $normal-color-disabled;
+  }
+  .bg-primary {
+    background: -webkit-linear-gradient(left, $primary-button-color-start, $primary-button-color-end);
+  }
+  .button-primary {
+    width: 100%;
+    height: 44px;
+    line-height: 44px;
+    font-size: $font-lg;
+    border: none;
+    border-radius: 2px;
+    color: white;
+    background: -webkit-linear-gradient(left, $primary-button-color-start, $primary-button-color-end);
+  }
+  .button-second {
+    width: 100%;
+    height: 44px;
+    line-height: 44px;
+    font-size: $font-lg;
+    border: none;
+    border-radius: 2px;
+    color: white;
+    background: -webkit-linear-gradient(left, #FF8D2B, #FF4944);
+  }
+  .button-disabled {
+    width: 100%;
+    height: 44px;
+    line-height: 44px;
+    font-size: $font-lg;
+    border: none;
+    border-radius: 2px;
+    color: white!important;
+    background-color: $memo-color-light!important;
+  }
+  .center {
+    text-align: center;
+  }
+  .material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+  }
+  .no-padding {
+    padding: 0!important;
+  }
+  .padding-bottom {
+    padding: 0px 0px 48px 0px !important;
+  }
+  .page {
+    overflow-y: hidden;
+    background: $bgcolor;
+  }
+  .has-header {}
+  .has-footer.mu-content-block {
+    padding-bottom: 100px;
+  }
+  .field {
+    display: flex;
+  }
+  .field label:first-child {
+    flex: 0 0 80px;
+    font-size: $font-sm;
+    height: 56px;
+    line-height: 44px;
+  }
+  .demo-popup-left {
+    display: flex;
+    width: 80%;
+    max-width: 375px;
+    height: 100%;
+  }
+  .slide-left-enter,
+  .slide-right-leave-active {
+    position: absolute;
+    opacity: 0;
+    -webkit-transform: translate(50px, 0);
+    transform: translate(50px, 0);
+  }
+  .slide-left-leave-active,
+  .slide-right-enter {
+    position: absolute;
+    opacity: 0;
+    -webkit-transform: translate(-50px, 0);
+    transform: translate(-50px, 0);
+  }
+  .fade-enter-active {
+    transition: all .3s ease-out .2s;
+  }
+  .fade-leave-active {
+    transition: all .2s ease-out;
+  }
+  .fade-enter,
+  .fade-leave-to {
+    position: absolute;
+    opacity: 0;
+    -webkit-transform: translate(-50px, 0);
+    transform: translate(-50px, 0);
+  }
+  .footer-tabs {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    transition: .1s all ease-out;
+  }
+  .slide-up-enter,
+  .slide-down-leave-active {
+    opacity: 0;
+    -webkit-transform: translate(0, 50px);
+    transform: translate(0, 50px);
+  }
+  .slide-up-leave-active,
+  .slide-down-enter {
+    opacity: 0;
+    -webkit-transform: translate(0, 50px);
+    transform: translate(0, 50px);
+  }
+  .dialog-icon {
+    width: 40px;
+  }
+  .dialog-button-box {
+    display: flex;
+    width: 100%;
+  }
+  .dialog-button-box button {
+    width: 100%;
+    height: 48px;
+    line-height: 48px;
+    font-size: $font-sm;
+    color: $normal-color;
+    border: none;
+    background: none;
+    border-top: 1px solid $input-border-color;
+  }
+  .dialog-button-box button:not(:first-child) {
+    border-left: 1px solid $input-border-color;
+  }
+  //覆盖样式
+  .mu-text-field.has-label .mu-text-field-label.float {
+    color: $memo-color-light;
+    font-size: $font-sm;
+  }
+  .mu-text-field.focus-state.has-label {
+    color: $primary-color;
+  }
+  .mu-text-field-focus-line {
+    margin-top: 0;
+  }
+  .mu-text-field-focus-line:not(.error),
+  .mu-text-field-focus-line.focus:not(.error) {
+    height: 1px;
+    background-color: transparent;
+    border-top: none;
+    border-bottom: 1px solid $primary-color;
+  }
+  .mu-text-field.error .mu-text-field-help {
+    color: $error-color;
+  }
+  .mu-text-field-focus-line.error {
+    height: 1px;
+    background-color: transparent;
+    border-top: none;
+    border-bottom: 1px solid $error-color;
+  }
+  .mu-text-field {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .mu-text-field-input {
+    font-size: $font-sm;
+    color: $normal-color;
+  }
+  .mu-appbar {
+    height: 48px;
+    text-align: center;
+    background-color: $primary-color;
+  }
+  .mu-appbar-title {
+    font-size: 18px;
+  }
+  .mu-tabs {
+    border-radius: 2px 2px 0 0;
+    background-color: white;
+  }
+  .mu-tab-link {
+    color: $normal-color;
+  }
+  .mu-tab-link.mu-tab-active .mu-tab-text {
+    color: $primary-color;
+  }
+  .mu-tab-link-highlight {
+    background: linear-gradient(90deg, white 40%, $primary-color 40.1%, $primary-color 60%, white 60.1%);
+    color: $primary-color;
+  }
+  .mu-tab-text {
+    color: #4A4A4A;
+  }
+  .mu-bottom-item-active .mu-bottom-item-text,
+  .mu-bottom-item-active .mu-bottom-item-icon {
+    color: $primary-color;
+  }
+  .mu-content-block {
+    position: relative;
+    height: 100%;
+    overflow-y: auto;
+    padding: 10px 10px 48px 10px;
+    -webkit-overflow-scrolling: touch;
+  }
+  .mu-popup-full {
+    width: 100%;
+    height: 100%;
+  }
+  .mu-popup-full .mu-appbar {
+    background-color: $input-border-color;
+  }
+  .mu-popup-full .mu-appbar-title {
+    font-size: $font-lg;
+    font-weight: bold;
+    color: $normal-color;
+  }
+  .mu-popup-full .mu-icon {
+    color: $close-color;
+  }
+  .mu-popup-bottom {
+    width: 100%;
+  }
+  .mu-popup-bottom .mu-appbar {
+    background-color: $input-border-color;
+  }
+  .mu-popup-bottom .mu-appbar-title {
+    font-size: $font-lg;
+    color: $normal-color;
+  }
+  .mu-popup-bottom .mu-icon {
+    color: $close-color;
+  }
+  .mu-dialog .mu-appbar {
+    position: relative;
+  }
+  .mu-dialog-body {
+    padding: 0;
+  }
+  .mu-buttom-item {
+    padding: 4px;
+  }
+  .mu-radio-icon {
+    margin-right: 10px;
+  }
+  .mu-infinite-scroll {
+    min-height: 50px;
+    line-height: 50px;
+  }
+  .mu-list {
+    padding: 0;
+  }
+  .mu-dialog.dialog {
+    width: 80%;
+  }
+  .dialog-content {
+    font-size: $font-lg;
+    color: $normal-color;
+  }
+  .step .mu-step-label {
+    flex-direction: column;
+  }
+  .step .mu-step-label-icon-container {
+    margin-right: 0;
+    width: 24px;
+    height:24px;
+    line-height:24px;
+  }
+  .step .mu-step-connector-line{
+    border-color:#BABEC6;
+  }
+  .step .mu-step-connector {
+    position: relative;
+    top: -16px;
+  }
+  .step .mu-step-label {
+    height: 50px;
+    line-height: 30px;
+  }
+  .step .mu-step-label.active {
+    color: $primary-color;
+  }
+  .mu-step-label.completed .mu-step-label-circle, .mu-step-label.active .mu-step-label-circle {
+    background-color: $primary-color;
+  }
+  .mu-step-label-circle{
+    width:24px;
+    height:24px;
+    line-height:24px;
+    font-size:17px;
+  }
+  .mu-checkbox-icon-uncheck {
+    color: gray;
+  }
+  .mu-checkbox-icon-checked,
+  .mu-refresh-control,
+  .mu-step-label.active .mu-step-label-icon,
+  .mu-step-label.completed .mu-step-label-icon {
+    color: $primary-color;
+  }
+  .mu-circle-spinner {
+    border-color: $primary-color;
+  }
+  .mu-text-field {
+    font-size: $font-sm;
+  }
+  .mu-text-field-line {
+    background: none;
+    border-top: none;
+    border-bottom: 1px solid $input-border-color;
+  }
+  .mu-text-field-line.disabled {
+    background: none;
+    border-top: none;
+    border-bottom: 1px solid $input-border-color;
+  }
+  .footer-background {
+    color: white;
+    background: -webkit-linear-gradient(-135deg, #FF4944, #FF8D2B);
+    background: linear-gradient(-135deg, #FF4944, #FF8D2B);
+  }
+  .mu-checkbox-icon {
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+  }
+  .mu-checkbox-svg-icon {
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+  }
+  .mu-checkbox input[type=checkbox]:checked+.mu-checkbox-wrapper .mu-checkbox-ripple-wrapper,
+  .mu-checkbox input[type=checkbox]:checked+.mu-checkbox-wrapper .mu-checkbox-icon-uncheck,
+  .mu-radio input[type=radio]:checked+.mu-radio-wrapper .mu-radio-ripple-wrapper,
+  .mu-radio input[type=radio]:checked+.mu-radio-wrapper .mu-radio-icon-uncheck,
+  .mu-radio-icon-checked {
+    color: $primary-color;
+  }
+  .mu-slider-thumb,
+  .mu-switch input[type=checkbox]:checked+.mu-switch-wrapper .mu-switch-thumb {
+    background-color: $primary-color;
+    color: $primary-color;
+  }
+  .mu-switch input[type=checkbox]:checked+.mu-switch-wrapper .mu-switch-track {
+    background-color: rgba(142, 218, 140, .5);
+  }
+  .mu-text-field-help {
+    margin-top: 10px;
+  }
+  .mu-slider-fill {
+    background-color: $primary-color;
+  }
+  .mbsc-ios .mbsc-fr-btn {
+    color: $primary-color!important;
+    font-weight: normal!important;
+  }
+  .mu-text-field.focus-state {
+    color: $primary-color;
+  }
+  .mu-divider {
+    background-color: #E9ECEE;
+  }
+  // .mu-checkbox-svg-icon {
+  //   width: 22px;
+  //   height: 22px;
+  // }
+  //修改选择框选择样式
+  .mu-menu-item-wrapper.active {
+    color: $primary-color;
+  }
+  //------------导航栏吸附----------------
+  .add-fixed {
+    position: fixed !important;
+    top: 0;
+    z-index: 100 !important;
+  }
+  .prod-nav {
+    background: white;
+    text-align: center;
+    line-height: 48px;
+    display: flex;
+    box-shadow: 0 3px 15px 0 #E9ECEE;
+    z-index: 2;
+    width: 100%;
+    padding: 0px 15px;
+    z-index: 3;
+    position: relative;
+  }
+  .noFixed {
+    opacity: 0;
+    height: 0px; // position: relative!important;
+    // transition: all .25s linear;
+  }
+  .footer_fixd {
+    transition: all .25s linear;
+  }
+  .mu-dropDown-menu-icon {
+    display: none;
+  }
+  .mu-checkbox-label {
+    margin-left: 8px;
+  }
+  .mu-text-field-hint {
+    color: #BABEC6;
+  }
+  .mu-raised-button {
+    box-shadow: none;
+  }
+  .mu-step-label {
+    color: #BABEC6;
+  }
+  .step .mu-step-label.completed{
+    color:$primary-color;
+  }
+  .mu-appbar {
+    padding-right: 24px;
+    .right {
+      img {
+        width: 12px;
+      }
+    }
+  }
+  .mu-dialog-wrapper {
+    bottom: 56px;
+  }
+}

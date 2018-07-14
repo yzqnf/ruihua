@@ -1,0 +1,95 @@
+//基础变量
+@import "vars.scss";
+//基础变量 copyFrom main.sass
+$phone_header_color:#D5A733;
+$phone_header_bg:#FFEDB0;
+//本地基础样式
+.primary_yzm {
+  .yzm {
+    position: absolute;
+    right: 8%;
+    margin-top: -48px;
+    font-size: 1.3rem; // color: #52C750;
+    line-height: 13px; // width: 40%;
+    border: none;
+    border-left: 1px solid $primary-color; // width: 50%;
+    min-width: 100px;
+    width: 130px;
+    background: none;
+    outline-style: none;
+		padding: 0px;
+		border-radius: 0px;
+  }
+  .yzm:disabled {
+    color: $normal-color-disabled;
+    border-left: 1px solid;
+  }
+}
+
+.text_box {
+  display: flex;
+  height: 40px;
+  line-height: 40px;
+  margin: 16px;
+  .text_header {
+    // flex: 0 0 15%;
+    text-align: left;
+    img {
+      width: 20px;
+      height: 20px;
+      border-radius: 3px;
+      color: $phone_header_color;
+      background: #F9F9F9;
+      margin: 10px 8px;
+      display: inline-block; // vertical-align: middle;
+      line-height: 20px;
+      font-size: 1.5rem;
+    }
+  }
+  .text_body {
+    // flex: 0 0 85%;
+    margin-left: 4px;
+    font-size: 1.3rem;
+    line-height: 40px;
+    color: $normal-color-light;
+    // padding-top: 10px; // font-family: PingFangSC-Medium;
+  }
+}
+
+.question {
+  background: #F9F9F9;
+  .text_header {
+    font {
+      color: $primary-color;
+      background: rgb(220, 242, 219);
+    }
+  }
+  .text_body {
+    color: $normal-color-light;
+  }
+}
+
+.mu-checkbox-icon {
+  margin-right: .5rem;
+}
+
+.pwd_info {
+  .error_gray {
+    .mu-text-field-content {
+      .mu-text-field-help {
+        color: gray;
+      }
+    }
+    .mu-text-field-focus-line.error {
+      background-color: none;
+      border-bottom: none;
+    }
+  }
+  .error {
+    .mu-text-field-help {
+      margin-top: 8px;
+      line-height: 1.3rem;
+      font-size: 1.2rem;
+    }
+  }
+}
